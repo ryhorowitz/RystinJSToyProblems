@@ -13,7 +13,7 @@ built-in String class.
 function indexOf(firstString, secondString) {
   //debugger;
   let comparison = [];
-  let firstIndexOfSecondString = 0;
+  let firstIndexOfSecondString = -1;
   for (var i = 0; i < firstString.length; i++) {
     let currentLetter = firstString[i];
     if ((currentLetter === secondString[0]) 
@@ -36,7 +36,7 @@ function indexOf(firstString, secondString) {
       }
     }
   }
-  return -1;
+  return firstIndexOfSecondString;
 }
 
 //indexOf('Some strings', 's');                      // 5
